@@ -15,5 +15,15 @@ com
 # Start your cURL command with curl -X POST
 # and then add -F for every field=value you want to add to the POST:
 
+curl -X 'POST' \
+  'http://localhost:8000/items/' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "name": "kishor",
+  "description": "kishor name",
+  "price": 011,
+  "tax": 10
+}'
 
 
